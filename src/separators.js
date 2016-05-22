@@ -16,8 +16,8 @@ function thousands_separators(num) {
 		Arr = arr+"."+num2;
 	}
 	else{Arr = arr};
-
-	return Arr.join(","); 
+	var Arr1 = Arr.join(",");
+	return Arr1; 
 }
 
 module.exports = thousands_separators;
