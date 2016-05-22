@@ -12,12 +12,13 @@ function thousands_separators(num) {
 	for(var i=j;i<num1.length;i+=3){
 		arr.push(num1.substr(i,3));	 
 	}
+	var arr = arr.join(",");
 	if(num2){
 		Arr = arr+"."+num2;
 	}
 	else{Arr = arr};
-	var Arr1 = Arr.join(",");
-	return Arr1; 
+
+	return Arr; 
 }
 
 module.exports = thousands_separators;
